@@ -52,7 +52,3 @@ mon.setCursorpos(1,4)
 
 sleep(5)
 end
-
-
-	
-	
