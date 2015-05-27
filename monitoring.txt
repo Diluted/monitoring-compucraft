@@ -10,6 +10,7 @@ local rstatuscolor
 local capacmax
 local capacstored
 
+-- dit is het loopje!
 while true do
 -- variables vullen met info
 turbinerpm = math.ceil(turbine1.getRotorSpeed())
@@ -32,7 +33,7 @@ mon.clear()
 --Display info monitor
 mon.setCursorPos(1,1)
 mon.setTextColor(colors.white)
-mon.write("Reactor status: ")
+mon.write("Reactor Status: ")
 mon.setTextColor(rstatuscolor)
 mon.write(rstatus)
 
@@ -44,11 +45,15 @@ mon.write(turbinerpm)
 
 mon.setCursorpos(1,3)
 mon.setTextColor(colors.white)
-mon.write("RF/T produced: ")
+mon.write("Output: ")
 mon.setTextColor(colors.green)
 mon.write(turbinerft)
+mon.write("RF/T")
 
 mon.setCursorpos(1,4)
+mon.setTextColor(colors.white)
+mon.write("Energy storage: ")
+
 
 sleep(5)
 end
